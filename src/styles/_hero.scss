@@ -1,0 +1,34 @@
+@use 'variaveis';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.5vw;
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.612);
+  text-align: center;
+
+
+  h1 {
+    text-align: center;
+  }
+
+    &__carousel{
+      padding-top: 50px;
+    }
+  &__content {
+    width: 100%; 
+    max-width: 66.67vw; 
+    margin: 0 auto;
+
+    .title--small {
+      margin-bottom: 64px;
+    }
+
+    .hero__carousel {
+      width: 100%; 
+      margin: 0 auto; 
+    }
+  }
+}

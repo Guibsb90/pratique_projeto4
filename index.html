@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaBRA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__logo title--big">
+        <img src="dist/images/logos/AquaBra-removebg-preview-photoaidcom-cropped.png" alt="Loja AquaBRA">    AquaBRA 
+      </h1>
+      <div class="header__search header__links">
+        <input class="button--dark" type="search" name="search" id="search" placeholder="Pesquise AQUI">
+        <button class="button button--dark">Pesquisar</button>
+      </div>     
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero__content">
+      <h2 class="title--big">
+        <strong>O lugar do fã de aquarismo!</strong>
+      </h2>
+      <div class="container hero__carousel">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div data-bs-interval="2500" class="carousel-item active">
+              <img class="d-block w-100" src="dist/images/carrousel/1.png" alt="Jumbo">
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+              <img class="d-block w-100" src="dist/images/carrousel/2.png" alt="Plantado">
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+              <img class="d-block w-100" src="dist/images/carrousel/3.png" alt="Acessorios">
+            </div>
+          </div>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <section class="shows">
+    <nav class="shows__tabs">
+      <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active ">
+        Peixes disponíveis
+      </button>
+    </nav>
+    <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+      <li class="shows__list__item">
+        <img src="src/images/acara.webp" alt="spidey"><br>
+        <span class="text"><strong>Acará bandeira é um peixe de aguas acidas</strong> </span>
+      </li>
+      <li class="shows__list__item">
+        <img src="src/images/ciclideo.jpeg" alt="willow"><br>
+        <span class="text"><strong>Acará bandeira é um peixe de aguas acidas </strong></span>
+      </li>
+      <li class="shows__list__item">
+        <img src="src/images/disco.webp" alt="the_santa_clauses"><br>
+        <span class="text"><strong>Acará bandeira é um peixe de aguas acidas </strong></span>
+      </li>
+      <li class="shows__list__item">
+        <img src="src/images/molinesia.webp" alt="sem_limites"><br>
+        <span class="text"><strong>Acará bandeira é um peixe de aguas acidas </strong></span>
+      </li>
+      <li class="shows__list__item">
+        <img src="src/images/pirarara.jpeg" alt="lobisomem"><br>
+        <span class="text"><strong>Acará bandeira é um peixe de aguas acidas </strong></span>
+      </li>
+      <li class="shows__list__item">
+        <img src="src/images/ramireze.jpeg" alt="desencantada"><br>
+        <span class="text"><strong>Acará bandeira é um peixe de aguas acidas</strong> </span>
+      </li>
+  </ul>
+
+    
+  </section>
+  <section class="faq">
+    <h2 class="title">
+      Perguntas frequentes
+    </h2>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div class="faq__questions__item__question" data-faq-question>
+          O que está incluído no Disney+?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          Benefícios de assinar o Disney+: <br>
+Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star. <br>
+Os torneios mais importantes do mundo e programas da ESPN ao vivo. <br>
+Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão. <br>
+Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.
+        </div>
+      </li>
+      <li class="faq__questions__item faq__questions__item">
+        <div class="faq__questions__item__question" data-faq-question>
+          Quais formas de pagamento posso utilizar?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple, Mercado Livre e provedores locais de TV, telefonia e internet.
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div class="faq__questions__item__question" data-faq-question>
+          Onde posso assistir ao Disney+?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a lista completa de dispositivos compatíveis na Central de Ajuda.
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="dist/images/logos/AquaBra-removebg-preview-photoaidcom-cropped.png" alt="">
+    <ul class="footer__links">
+      <li class="footer__links__item">
+        <div class="language-selector">
+        <select>
+          <option>English</option>
+          <option selected>Português</option>
+        </select>
+        </div>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Termos e Condições de Uso</a>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Política de privacidade</a>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Anúncios personalizados</a>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Dispositivos compatíveis</a>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Ajuda</a>
+      </li>
+      <li class="footer__links__item">
+        <a href="#" class="text--small">Sobre o site</a>
+      </li>
+    </ul>
+    <p class="text--small">
+      © 2023 AquaBRA LTDA - todos os direitos reservados
+    </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
