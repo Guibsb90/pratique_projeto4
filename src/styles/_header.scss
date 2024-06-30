@@ -1,98 +1,102 @@
 @use 'variaveis';
 
-.header{
+.header {
   position: sticky;
   top: 0;
   left: 0;
   background-color: variaveis.$corDeFundo;
   transition: background-color .5s ease;
   z-index: 1;
-  
-  &__search{
+  overflow-x: hidden;
+
+  &__search {
     height: 150px;
     display: flex;
     margin: 5px;
     padding: 0 20px;
     align-items: center;
-    input{
+
+    @media (max-width: 768px) {
+      flex-direction: column; 
+      align-items: center; 
+      height: auto; 
+      padding: 10px; 
+    }
+
+    input {
       max-height: 50px;
       font-size: 13px;
-      padding: 8px 11px;    
-      letter-spacing: 0;  
+      padding: 8px 11px;
+      letter-spacing: 0;
+
+      @media (max-width: 768px) {
+        margin-top: 10px; 
+        width: fit-content; 
+      }
     }
-    button{
-      margin-left: 20px;   
+
+    button {
+      margin-left: 20px;
       max-height: 50px;
+      
+      @media (max-width: 768px) {
+        max-width: fit-content;      
+      }
     }
   }
 
-
-  &--is-hidden{
-    background-color: transparent;
-    transition: background-color .5s ease;
-    
-    .header__logo{
-      opacity: 0;
-      transition: opacity .5s ease;
-    }
-    .header__links__item:first-child{
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity .5s ease;
-    }
-  }
-
-  &__container{
+  &__container {
     padding: 8px 36px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; 
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       padding: 0 12px 0 20px;
+      flex-direction: column;      
     }
   }
 
-  &__logo{
+  &__logo {
     display: flex;
-    width: 100%;
     margin: 5px;
-    transition: opacity .5s ease;
     text-align: center;
     align-items: center;
+    
 
-
-
-    img{
+    img {
       max-width: 100px;
-      width: 100%;    
+      width: 100%;
       margin-right: 20px;
-  
+
+      @media (max-width: 768px) {
+        max-width: 64px;
+        margin-bottom: 10px;
+      }
     }
 
-
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       max-width: 64px;
     }
   }
 
-  &__links{
+  &__links {
     display: flex;
 
-    &__item{
+    &__item {
       margin: 5px;
       transition: opacity .5s ease;
     }
   }
 
-  .button{
+  .button {
     height: 50px;
-    
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
       font-size: 13px;
       padding: 8px 11px;
       height: 40px;
       letter-spacing: 0;
-
     }
   }
 }
